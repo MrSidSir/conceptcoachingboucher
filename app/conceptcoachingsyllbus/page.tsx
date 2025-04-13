@@ -4,11 +4,11 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div> this page is about tutor 
+    <div> This page is about tutor 
     
-    <h1> i am mr sid sir ,</h1>
-    <p> i have done master in chemistry </p> 
-    <button> ok </button>
+    <h1> I am mr sid sir ,</h1>
+    <p> I have done master in chemistry </p> 
+    <button>  OKEY </button>
     </div>
   )
 }
