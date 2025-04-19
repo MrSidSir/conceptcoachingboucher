@@ -1,17 +1,17 @@
-import React from 'react'
+import React from "react";
+import page from "../conceptcoachingonlineplatformlink/page";
 
+type Props = {};
 
-
-const page = () => {
+const Page = (props: Props) => {
   return (
-    <div>
-      <div>
-      <h1>There are many facilities in my coaching institute </h1>
-    <p> We provide free of cost question papers</p>
+    <div className="grid grid-flow-col grid-rows-2 grid-cols-3 gap-4">
+      <div>1</div>
+      <div className="col-start-3">2</div>
+      <div>3</div>
+      <div>4</div>
+      <div className="row-start-1 col-start-2 col-span-2">5</div>
     </div>
-  <button> <search> OK </search> </button>
-    </div>
-  )
-}
-
-export default page
+  );
+};
+export default Page;
