@@ -2,15 +2,30 @@
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import irshad from "../public/PHOTO IRSHAD.jpg";
-
 export default function Home() {
   const router = useRouter();
   return (
     <div>
       <div className=" flex-1/3 m-20 text-center text-red-500 text-shadow-amber-200 text-[50px]">
-        <h1> welcome to concept coaching browser </h1>
-        <h2>about our browser</h2>
-        <h3> This is an international browser </h3>
+        <h1 className="bg-slate-800 text-amber-50 text-bold ">
+          {" "}
+          welcome to concept coaching browser{" "}
+        </h1>
+        <p
+          className="bg-slate-400 p-1.5 font-family: 'Arial' , sans-serif; font-size: 50px; font-black color: #333 ; background : Linear-gradient(to right, #ff9a9e, #fad0c4;);
+        padding: 15px; border-radius : 8px;
+        text-align: center; box-shadow: 2px 2px 5px rgba (0,0,0,0,0.2); "
+        >
+          Director: SYED IRSHAD AHMAD ('MR. SID SIR') Qualification: B.SC.
+          (P.C.M), M.SC.( CHEMISTRY )+ B.ED. M.C.A (Machine learning )
+        </p>
+        <p
+          className="bg-slate-500 p-1.5 font-family: 'Arial' , sans-serif; font-size: 18px; color: #333; background : Linear-gradient(to right, #ff9a9e, #fad0c4;);
+        padding: 15px; border-radius : 8px;
+        text-align: center; box-shadow: 3px 3px 10px rgba (0,0,0,0,0.2); "
+        >
+          ONE INITIATIVE TOWARDS CONCEPT
+        </p>
         <button type="button" onClick={() => router.push("/")}>
           <Image
             src="https://res.cloudinary.com/dpotbki0n/image/upload/v1744553152/PHOTO_IRSHAD_ktqljc.jpg"
@@ -29,8 +44,61 @@ export default function Home() {
       <div>
         <div>
           <div>
-            <h1>There are many facilities in my coaching institute </h1>
-            <p> We provide free of cost question papers</p>
+            <h1> Please read the following line carefully </h1>
+            <p
+              className=" p-1.5 font-family: 'Arial' , sans-serif; font-size: 18px; color: #444 ; background : Linear-gradient(to right, #ff9a9e, #fad0c4;);
+        padding: 15px; border-radius : 8px;
+        text-align: center; box-shadow: 3px 3px 10px rgba (0,0,0,0,0.2) justify-between ; "
+            >
+              {" "}
+              why should you join our concept coaching classes :{" "}
+              <p>
+                1. **Unlock your full potential**—concept coaching helps you
+                truly understand, not just memorize.{" "}
+              </p>{" "}
+              <p>
+                {" "}
+                2. **Bridge the gap between theory and reality**—learn how
+                concepts work in real life!
+              </p>{" "}
+              <p>
+                3. **Personalized guidance** ensures no student is left behind{" "}
+              </p>{" "}
+              <p>
+                4. **Master the fundamentals** so you can solve any problem with
+                confidence.{" "}
+              </p>{" "}
+              <p>
+                {" "}
+                5. **Interactive and engaging sessions** make learning exciting
+                and effective.
+              </p>{" "}
+              <p>
+                {" "}
+                6. **Boost your critical thinking** and apply knowledge like a
+                pro{" "}
+              </p>{" "}
+              <p>
+                {" "}
+                **Stronger concepts mean higher scores**—excel in exams with
+                ease.
+              </p>{" "}
+              <p>
+                {" "}
+                8. **Learn from experienced mentors** who make tough topics
+                simple{" "}
+              </p>{" "}
+              <p>
+                {" "}
+                9. **Turn confusion into clarity**—never fear tricky subjects
+                again!
+              </p>{" "}
+              <p>
+                {" "}
+                10. **Your future starts today**—invest in yourself with concept
+                coaching.
+              </p>
+            </p>
             <p></p>
           </div>
           <button>
@@ -61,12 +129,28 @@ export default function Home() {
             yes{" "}
           </button>
           <button
+            className="bg-amber-700  flex gap-2.5 text-amber-300 p-10 rounded-[50%] cursor-pointer hover:bg-sky-700 "
+            type="button"
+            onClick={() => router.push("/conceptcoachingcontent")}
+          >
+            {" "}
+            TODO{" "}
+          </button>
+          <button
             className="bg-black text-amber-50 p-10 cursor-pointer hover:bg-amber-300 rounded-[30%]  "
             type="button"
             onClick={() => router.push("/conceptcoachingonlineplatformlink")}
           >
             {" "}
             OK{" "}
+          </button>
+          <button
+            className="bg-amber-700  flex gap-2.5 text-amber-300 p-10 rounded-[50%] cursor-pointer hover:bg-sky-700 "
+            type="button"
+            onClick={() => router.push("/TODOAPP")}
+          >
+            {" "}
+            TODO {""}
           </button>
           <button
             className="bg-amber-950 bg-rose-600 text-yellow-400 p-10 rounded-[20%]  "

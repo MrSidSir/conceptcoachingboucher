@@ -29,45 +29,33 @@ const Brochure = () => {
           <p className="text-lg mt-2"></p> */}
         </div>
       </header>
-
-      {/* Content Section */}
-      <main className="container mx-auto px-4 py-10">
-        <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">
-            This coaching class gives tuition to children from class 5th to
-            class 12th. Here special attention is given to the educational
-            concept of the child. Here syllabus wise test is also taken from the
-            students. And this coaching is completely free and gives tuition to
-            orphan students.
-          </h2>
-          <p>
-            coaching location : E-block , 25 futta road , khadda coloney ,
-            jaitpur part - 2 , New Delhi 110044
+      <div className="w-full max-w-xs">
+        <form className="bg-white shadow-md rounded px-8 pb--8 mb-4"></form>
+        <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-boldmb-2">
+            username
+          </label>
+          <input className="shadow appearance-none border  rounded w-full py-2 px-3text-gray"></input>
+        </div>
+        <div className="mb-6">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            for="password"
+          >
+            password
+          </label>
+          <input className="class=shadow appearance-none border border-red-50 rounded w-full py-2"></input>
+          <p className="text-red-500 text-xs italic">
+            please choose a password.
           </p>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">
-            {" "}
-            Concept Coaching Classes are held in the morning and evening in two
-            shifts. ACs have been installed in all the classes here. There is a
-            saint here. Here the weaker children are guided separately. There
-            are CCTV cameras here which provide greater security to the
-            students.
-          </h2>
-          <ul className="list-disc list-inside">
-            <li className="bg-black text-white "> free test paper</li>
-            <li className="bg-red-400 text-amber-200"> online doubt session</li>
-            <li className=" bg-blue-600 text-sky-400">free wifi connectivity</li>
-          </ul>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
-          <p>Email: irshad1554@gmail.com</p>
-          <p>Phone: +91 7355534404 </p>
-        </section>
-      </main>
+        </div>
+        <div className="flex items-centre justify-between"></div>
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 row-auto">
+          sign in
+        </button>
+      </div>
+      {/* Content Section */}
+      <main className="container mx-auto px-4 py-10"></main>
 
       {/* Footer Section */}
       <footer className="bg-purple-950 text-white py-4">
