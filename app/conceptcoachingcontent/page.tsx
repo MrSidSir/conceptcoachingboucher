@@ -1,4 +1,6 @@
 "use client";
+import Header from "@/components/Header";
+import HomePageButton from "@/components/homePageButton";
 import { useState } from "react";
 
 const TodoApp = () => {
@@ -15,7 +17,6 @@ const TodoApp = () => {
   };
 
   // https://jsonplaceholder.typicode.com/posts/1/comments
-  
 
   const toggleTaskCompletion = (index) => {
     setTasks(
@@ -31,6 +32,7 @@ const TodoApp = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 flex justify-center items-center">
+      <Header />
       <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
         <h1 className="text-3xl font-bold text-center text-blue-600">
           Concept Coaching Classes - To-Do List
@@ -79,6 +81,9 @@ const TodoApp = () => {
             </li>
           ))}
         </ul>
+      </div>
+      <div>
+        <HomePageButton />
       </div>
     </div>
   );

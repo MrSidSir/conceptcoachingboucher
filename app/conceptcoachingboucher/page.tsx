@@ -2,10 +2,13 @@
 import React from "react";
 import ir from "../../public/PHOTO IRSHAD.jpg";
 import Image from "next/image";
+import HomePageButton from "@/components/homePageButton";
+import Header from "@/components/Header";
 
 const Brochure = () => {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800">
+      <Header />
       {/* Header Section */}
       <header className="bg-blue-600 text-white py-6 ">
         <div className=" flex  items-center justify-between container mx-auto text-center border-2 border-red-800">
@@ -55,7 +58,9 @@ const Brochure = () => {
         </button>
       </div>
       {/* Content Section */}
-      <main className="container mx-auto px-4 py-10"></main>
+      <main className="container mx-auto px-4 py-10">
+        <HomePageButton />
+      </main>
 
       {/* Footer Section */}
       <footer className="bg-purple-950 text-white py-4">

@@ -1,51 +1,49 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
+import Button from "../../components/button1";
+const courses = [
+  "Mathematics",
+  "Physics",
+  "Chemistry",
+  "Biology",
+  "English",
+  "Computer Science",
+];
 
-type Props = {};
+async function Page() {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [Users, setUsers] = useState();
 
-const page = (props: Props) => {
-  return <div> 
-      <div className="bg-gray-100 min-h-screen">
-        {/* Header */}
-        <header className="bg-blue-600 text-white py-6 text-center">
-          <h1 className="text-4xl font-bold">Concept Coaching Classes</h1>
-          <p className="text-lg">Unlock Your Potential with Expert Guidance</p>
-        </header>
-  
-        {/* Hero Section */}
-        <section className="container mx-auto text-center py-16">
-          <h2 className="text-3xl font-bold text-gray-700">Achieve Your Goals with Us!</h2>
-          <p className="mt-4 text-gray-600">
-            Join our coaching programs and excel in academics and competitive exams.
-          </p>
-          <button className="mt-6 bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700">
-            Enroll Now
-          </button>
-        </section>
-  
-        {/* Features Section */}
-        <section className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 py-12">
-          <div className="bg-white p-6 rounded-lg shadow-md text-center">
-            <h3 className="text-xl font-semibold text-blue-600">Expert Tutors</h3>
-            <p className="text-gray-600 mt-2">Learn from the best industry professionals.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md text-center">
-            <h3 className="text-xl font-semibold text-blue-600">Comprehensive Courses</h3>
-            <p className="text-gray-600 mt-2">Detailed curriculum for academic success.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md text-center">
-            <h3 className="text-xl font-semibold text-blue-600">Flexible Learning</h3>
-            <p className="text-gray-600 mt-2">Online and offline options to suit your needs.</p>
-          </div>
-        </section>
-  
-        {/* Footer */}
-        <footer className="text-center text-gray-600 py-6">
-          © 2025 Concept Coaching Classes - All Rights Reserved
-        </footer>
-      </div>
-    
-  
-  export default ConceptCoaching; </div>;
-};
+  const filteredCourses = courses.filter((course) =>
+    course.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
-export default page;
+  return (
+    <div className="container">
+      <header className="fade-in">
+        <h1>Concept Coaching Classes</h1>
+        <input
+          type="text"
+          placeholder="Search courses..."
+          onChange={(e) => setSearchTerm(e.target.value)}
+          value={searchTerm}
+        />
+      </header>
+
+      <main>
+        <h2>Available Courses:</h2>
+        <ul>
+          {filteredCourses.length > 0 ? (
+            filteredCourses.map((course, index) => (
+              <li key={index}>{course}</li>
+            ))
+          ) : (
+            <li>No courses found</li>
+          )}
+        </ul>
+      </main>
+    </div>
+  );
+}
+
+export default Page;
