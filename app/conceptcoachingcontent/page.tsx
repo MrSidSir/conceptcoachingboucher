@@ -4,6 +4,8 @@ import { useState } from "react";
 const TodoApp = () => {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState("");
+  console.log("taske", tasks);
+  console.log("taske", newTask);
 
   const addTask = () => {
     if (newTask.trim() !== "") {
@@ -11,6 +13,9 @@ const TodoApp = () => {
       setNewTask("");
     }
   };
+
+  // https://jsonplaceholder.typicode.com/posts/1/comments
+  
 
   const toggleTaskCompletion = (index) => {
     setTasks(
@@ -57,7 +62,9 @@ const TodoApp = () => {
             <li
               key={index}
               className={`flex justify-between items-center p-3 border rounded ${
-                task.completed ? "line-through text-gray-500" : ""
+                task.completed
+                  ? "line-through text-gray-500"
+                  : "line-through text-red-700"
               }`}
             >
               <span onClick={() => toggleTaskCompletion(index)}>

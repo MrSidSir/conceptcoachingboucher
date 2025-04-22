@@ -123,7 +123,7 @@ export default function Home() {
           <button
             className="bg-amber-700  flex gap-2.5 text-amber-300 p-10 rounded-[50%] cursor-pointer hover:bg-sky-700 "
             type="button"
-            onClick={() => router.push("/conceptcoachingcontent")}
+            onClick={() => router.push("/conceptcoachingsyllbus")}
           >
             {" "}
             yes{" "}
@@ -150,7 +150,7 @@ export default function Home() {
             onClick={() => router.push("/TODOAPP")}
           >
             {" "}
-            TODO {""}
+            click{""}
           </button>
           <button
             className="bg-amber-950 bg-rose-600 text-yellow-400 p-10 rounded-[20%]  "
@@ -158,7 +158,7 @@ export default function Home() {
             onClick={() => router.push("/conceptcoachingteam")}
           >
             {" "}
-            CCC{" "}
+            Enroll{" "}
           </button>
         </div>
       </div>
