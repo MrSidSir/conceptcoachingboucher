@@ -4,6 +4,7 @@ import Image from "next/image";
 import irshad from "../public/PHOTO IRSHAD.jpg";
 import Button from "@/components/button1";
 import Header from "@/components/Header";
+
 export default function Home() {
   const router = useRouter();
   return (
@@ -101,6 +102,10 @@ export default function Home() {
             </p>
             <p></p>
           </div>
+          <button>
+            {" "}
+            <search> conceptcoachingsyllbus </search>{" "}
+          </button>
           <button>
             {" "}
             <search> ok </search>{" "}
