@@ -1,92 +1,87 @@
 import React from "react";
+import Head from "next/head";
 
-type Props = {};
-
-const Practice = (props: Props) => {
+const Page = () => {
   return (
-    <div className="bg-gray-100 min-h-screen font-sans">
-      <header className="bg-blue-500 text-white py-6">
-        <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-3xl font-bold">Concept Coaching</h1>
-          <nav>
-            <ul className="flex space-x-6">
-              <li>
-                <a href="#about" className="hover:underline">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="hover:underline">
-                  Services
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="hover:underline">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+    <div>
+      <Head>
+        <title>Concept Coaching Classes</title>
+        <meta
+          name="description"
+          content="Welcome to Concept Coaching Classes"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <main
+        style={{
+          display: "flex",
+          flexDirection: " column",
+          justifyContent: "center",
+          height: "100vh",
+          textAlign: "center",
+          backgroundColor: "#F3F4F6",
+          padding: "20px",
+        }}
+      >
+        <h2 style={{ marginTop: "20px", color: "#333", fontFamily: "Verdana" }}>
+          Welcome to Concept Coaching Classes!
+        </h2>
+        <p
+          style={{
+            marginTop: "10px",
+            color: "#555",
+            fontSize: "18px",
+            maxWidth: "600px",
+          }}
+        >
+          Your journey to mastering concepts starts here. We’re here to make
+          learning effective and fun for you!
+        </p>
+        <footer style={{ marginTop: "50px", color: "#4A90E2" }}>
+          Thank you for choosing us!
+        </footer>
 
-      <section id="about" className="py-12">
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-4">About Us</h2>
-          <p className="text-lg text-gray-700">
-            At Concept Coaching, we guide students to master concepts and
-            achieve excellence.
-          </p>
-        </div>
-      </section>
-
-      <section id="services" className="py-12 bg-gray-200">
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-4">Our Services</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 shadow-lg">
-              <h3 className="text-xl font-bold mb-2">Math Coaching</h3>
-              <p className="text-gray-700">
-                Understand fundamental concepts and tackle advanced problems.
-              </p>
-            </div>
-            <div className="bg-white p-6 shadow-lg">
-              <h3 className="text-xl font-bold mb-2">Science Coaching</h3>
-              <p className="text-gray-700">
-                Explore and grasp the wonders of science.
-              </p>
-            </div>
-            <div className="bg-white p-6 shadow-lg">
-              <h3 className="text-xl font-bold mb-2">Test Prep Coaching</h3>
-              <p className="text-gray-700">
-                Prepare for competitive exams with expert guidance.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" className="py-12">
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-4">Contact Us</h2>
-          <p className="text-lg text-gray-700">
-            Email us at{" "}
-            <a
-              href="mailto:contact@conceptcoaching.com"
-              className="text-blue-500 hover:underline"
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            margin: "20px",
+          }}
+        >
+          <svg
+            width="100"
+            height="100"
+            viewBox="0 0 100 100"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="50" cy="50" r="48" stroke="#4A90E2" strokeWidth="4" />
+            <text
+              x="50%"
+              y="50%"
+              dominantBaseline="middle"
+              textAnchor="middle"
+              fill="#4A90E2"
+              fontSize="12"
+              fontWeight="bold"
             >
-              contact@conceptcoaching.com
-            </a>
-          </p>
+              C3
+            </text>
+          </svg>
+          <h1
+            style={{
+              color: "#4A90E2",
+              fontFamily: "Arial",
+              marginLeft: "10px",
+            }}
+          >
+            Concept Coaching Classes
+          </h1>
         </div>
-      </section>
-
-      <footer className="bg-blue-500 text-white py-6">
-        <div className="container mx-auto text-center">
-          <p>&copy; 2025 Concept Coaching. All rights reserved.</p>
-        </div>
-      </footer>
+      </main>
     </div>
   );
 };
-export default Practice;
+
+export default Page;

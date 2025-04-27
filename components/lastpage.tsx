@@ -50,20 +50,12 @@ const Button = (props: Props) => {
           click{""}
         </button>
         <button
-          className="bg-amber-950 bg-rose-600 text-yellow-400 p-10 rounded-[20%] hover:bg-slate-950 "
+          className="bg-amber-950 bg-rose-600 text-yellow-400 p-10 rounded-[20%]  "
           type="button"
           onClick={() => router.push("/conceptcoachingteam")}
         >
           {" "}
           Enroll{" "}
-        </button>
-        <button
-          className="bg-fuchsia-600 border-indigo-800 text-shadow-lime-300 p-10 rounded-[30%] hover:bg-emerald-500 "
-          type="button"
-          onClick={() => router.push("/practice")}
-        >
-          {" "}
-          practice{" "}
         </button>
       </div>
     </div>
