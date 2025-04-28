@@ -8,9 +8,15 @@ const Page = (props: Props) => {
     <div>
       <div className="flex min-h-screen items-center justify-center bg-gray-100">
         <Head>
-          <title> Thank you for visiting concept coaching classes </title>
+          <div className="bg-amber-300 text-black text-arial p-10">
+            {" "}
+            Thank you for visiting concept coaching classes{" "}
+          </div>
         </Head>
-        <h1 className="text-4xl font-bold text-blue-500"> syed irshad ahmad </h1>
+        <h1 className="text-4xl font-bold text-blue-500">
+          {" "}
+          syed irshad ahmad{" "}
+        </h1>
       </div>
     </div>
   );

@@ -1,6 +1,11 @@
 import React from "react";
 
 const Page = () => {
+  function sum(x: number, y: number, z: number) {
+    return x + y + z;
+  }
+  const total = sum(3, 4, 5);
+
   return (
     <div className="bg-gray-100 min-h-screen">
       {/* Header */}
@@ -8,6 +13,7 @@ const Page = () => {
         <h1 className="text-4xl font-bold">Concept Coaching Classes</h1>
         <p className="text-lg">Unlock Your Potential with Expert Guidance</p>
       </header>
+      <h1>{total}</h1>
 
       {/* Hero Section */}
       <section className="container mx-auto text-center py-16">
@@ -18,7 +24,7 @@ const Page = () => {
           Join our coaching programs and excel in academics and competitive
           exams.
         </p>
-        <button className="mt-6 bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-amber-600 hover:bg-blue-700">
+        <button className="mt-6 bg-blue-600 text-white py-2 px-6 rounded-lg  hover:bg-amber-600 hover:bg-cyan-400">
           Enroll Now
         </button>
       </section>
@@ -26,7 +32,9 @@ const Page = () => {
       {/* Features Section */}
       <section className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 py-12">
         <div className="bg-white p-6 rounded-lg shadow-md text-center">
-          <h3 className="text-xl font-semibold  text-blue-600">Expert Tutors</h3>
+          <h3 className="text-xl font-semibold  text-blue-600">
+            Expert Tutors
+          </h3>
           <p className="text-gray-600 mt-2">
             Learn from the best industry professionals.
           </p>
@@ -58,3 +66,22 @@ const Page = () => {
 };
 
 export default Page;
+
+// import React from "react";
+
+// type Props = {};
+
+// const Page = (props: Props) => {
+//   function sum(x, y, z) {
+//     return x + y + z;
+//   }
+//   const total = sum(3, 4, 5);
+
+//   return (
+//     <div>
+//       <h1>{total}</h1>
+//     </div>
+//   );
+// };
+
+// export default Page;

@@ -10,113 +10,112 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <div className=" flex-1/3 m-20 text-center text-red-500 text-shadow-amber-200 text-[50px]">
-        <h1 className="bg-slate-800 text-amber-50 text-bold ">
-          {" "}
-          welcome to concept coaching browser{" "}
+      <div className="flex justify-center items-center flex-col m-12">
+        <h1 className="bg-gradient-to-r from-blue-600 via-purple-500 to-pink-400 text-white font-extrabold text-4xl md:text-5xl p-4 rounded-lg shadow-lg">
+          Welcome to Concept Coaching Browser
         </h1>
-        <p
-          className="bg-slate-400 p-1.5 font-family: 'Arial' , sans-serif; font-size: 50px; font-black color: #333 ; background : Linear-gradient(to right, #ff9a9e, #fad0c4;);
-        padding: 15px; border-radius : 8px;
-        text-align: center; box-shadow: 2px 2px 5px rgba (0,0,0,0,0.2); "
-        >
-          Director: SYED IRSHAD AHMAD ('MR. SID SIR') Qualification: B.SC.
-          (P.C.M), M.SC.( CHEMISTRY )+ B.ED. M.C.A (Machine learning )
+        <p className="text-gray-900 bg-gradient-to-r from-gray-300 to-gray-100 p-6 my-4 rounded-xl shadow-md text-lg md:text-xl">
+          Director:{" "}
+          <span className="font-bold text-blue-500">
+            SYED IRSHAD AHMAD ('MR. SID SIR')
+          </span>
+          <br /> Qualifications: B.SC. (P.C.M), M.SC. (CHEMISTRY) + B.ED. M.C.A
+          (Machine Learning)
         </p>
-        <p
-          className="bg-slate-500 p-1.5 font-family: 'Arial' , sans-serif; font-size: 18px; color: #333; background : Linear-gradient(to right, #ff9a9e, #fad0c4;);
-        padding: 15px; border-radius : 8px;
-        text-align: center; box-shadow: 3px 3px 10px rgba (0,0,0,0,0.2); "
-        >
+        <p className="text-gray-800 bg-gradient-to-r from-green-300 to-green-100 p-4 my-2 rounded-lg shadow-md text-lg">
           ONE INITIATIVE TOWARDS CONCEPT
         </p>
-        <button type="button" onClick={() => router.push("/")}>
+        <button
+          type="button"
+          className="bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-medium py-2 px-6 rounded-full shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105"
+          onClick={() => router.push("/")}
+        >
           <Image
             src="https://res.cloudinary.com/dpotbki0n/image/upload/v1744553152/PHOTO_IRSHAD_ktqljc.jpg"
-            width={500}
-            height={500}
+            width={200}
+            height={200}
             alt="Picture of the author"
-            className="w-36 h-32 object-contain"
+            className="rounded-full"
           />
         </button>
       </div>
-      <ul className="list-disc list-inside">
-        <li className="bg-black text-white "> Mr. tabish sir (M.tech.) </li>
-        <li className="bg-red-400 text-amber-200"> Mr. Ameel sir(B.tech.) </li>
-        <li className=" bg-blue-600 text-sky-400">Mr. sid sir (m.sc.) </li>
-      </ul>
-      <div>
-        <div>
-          <div>
-            <h1> Please read the following line carefully </h1>
-            <p
-              className=" p-1.5 font-family: 'Arial' , sans-serif; font-size: 18px; color: #444 ; background : Linear-gradient(to right, #ff9a9e, #fad0c4;);
-        padding: 15px; border-radius : 8px;
-        text-align: center; box-shadow: 3px 3px 10px rgba (0,0,0,0,0.2) justify-between ; "
-            >
-              {" "}
-              why should you join our concept coaching classes :{" "}
-            </p>
-            <p>
-              1. **Unlock your full potential**—concept coaching helps you truly
-              understand, not just memorize.{" "}
-            </p>{" "}
-            <p>
-              {" "}
-              2. **Bridge the gap between theory and reality**—learn how
-              concepts work in real life!
-            </p>{" "}
-            <p>
-              3. **Personalized guidance** ensures no student is left behind{" "}
-            </p>{" "}
-            <p>
-              4. **Master the fundamentals** so you can solve any problem with
-              confidence.{" "}
-            </p>{" "}
-            <p>
-              {" "}
-              5. **Interactive and engaging sessions** make learning exciting
-              and effective.
-            </p>{" "}
-            <p>
-              {" "}
-              6. **Boost your critical thinking** and apply knowledge like a pro{" "}
-            </p>{" "}
-            <p>
-              {" "}
-              **Stronger concepts mean higher scores**—excel in exams with ease.
-            </p>{" "}
-            <p>
-              {" "}
-              8. **Learn from experienced mentors** who make tough topics simple{" "}
-            </p>{" "}
-            <p>
-              {" "}
-              9. **Turn confusion into clarity**—never fear tricky subjects
-              again!
-            </p>{" "}
-            <p>
-              {" "}
-              10. **Your future starts today**—invest in yourself with concept
-              coaching.
-            </p>
-            <p></p>
-          </div>
-          <button>
-            {" "}
-            <search> conceptcoachingsyllbus </search>{" "}
-          </button>
-          <button>
-            {" "}
-            <search> ok </search>{" "}
-          </button>
+
+      <div className="bg-gradient-to-r from-gray-100 to-gray-300 p-10 rounded-lg shadow-lg mx-20">
+        <ul className="list-disc list-inside text-lg space-y-4">
+          <li className="bg-gray-900 text-white font-medium py-3 px-6 rounded-md shadow-md hover:shadow-lg transition duration-300">
+            Mr. Sam (M.Tech.)
+          </li>
+          <li className="bg-red-500 text-white font-medium py-3 px-6 rounded-md shadow-md hover:shadow-lg transition duration-300">
+            Mr. Tanveer Sir (Master of Code)
+          </li>
+          <li className="bg-blue-600 text-white font-medium py-3 px-6 rounded-md shadow-md hover:shadow-lg transition duration-300">
+            Mr. Sid Sir (M.Sc.)
+          </li>
+        </ul>
+      </div>
+
+      <div className="mx-12 my-8">
+        <h2 className="text-2xl font-bold text-blue-500">
+          Why Should You Join Our Concept Coaching Classes:
+        </h2>
+        <div className="bg-white p-6 rounded-lg shadow-lg space-y-2">
+          <p>
+            <strong>1.</strong> Unlock your full potential—concept coaching
+            helps you truly understand, not just memorize.
+          </p>
+          <p>
+            <strong>2.</strong> Bridge the gap between theory and reality—learn
+            how concepts work in real life!
+          </p>
+          <p>
+            <strong>3.</strong> Personalized guidance ensures no student is left
+            behind.
+          </p>
+          <p>
+            <strong>4.</strong> Master the fundamentals to solve any problem
+            confidently.
+          </p>
+          <p>
+            <strong>5.</strong> Interactive and engaging sessions make learning
+            exciting and effective.
+          </p>
+          <p>
+            <strong>6.</strong> Boost your critical thinking and apply knowledge
+            like a pro.
+          </p>
+          <p>
+            <strong>7.</strong> Stronger concepts mean higher scores—excel in
+            exams with ease.
+          </p>
+          <p>
+            <strong>8.</strong> Learn from experienced mentors who make tough
+            topics simple.
+          </p>
+          <p>
+            <strong>9.</strong> Turn confusion into clarity—never fear tricky
+            subjects again!
+          </p>
+          <p>
+            <strong>10.</strong> Your future starts today—invest in yourself
+            with concept coaching.
+          </p>
         </div>
-        <div>
-          <div className="flex-1/12 text[25px] text-color via-violet-500 m-1.5">
-            about our facilities
-          </div>
-          <Button />
-        </div>
+      </div>
+
+      <div className="flex justify-around items-center my-12">
+        <button className="bg-purple-600 text-white font-medium py-2 px-6 rounded-lg shadow-md hover:shadow-lg transform transition duration-300 hover:scale-110">
+          <search>Concept Coaching Syllabus</search>
+        </button>
+        <button className="bg-blue-500 text-white font-medium py-2 px-6 rounded-lg shadow-md hover:shadow-lg transform transition duration-300 hover:scale-110">
+          <search>OK</search>
+        </button>
+      </div>
+
+      <div className="m-12">
+        <h3 className="text-xl text-center font-bold text-violet-500 mb-4">
+          About Our Facilities
+        </h3>
+        <Button />
       </div>
     </div>
   );

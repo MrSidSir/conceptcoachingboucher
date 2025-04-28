@@ -17,54 +17,56 @@ const Button = (props: Props) => {
           {" "}
           okey{" "}
         </button> */}
-        <button
-          className="bg-amber-700  flex gap-2.5 text-amber-300 p-10 rounded-[50%] cursor-pointer hover:bg-sky-700 "
-          type="button"
-          onClick={() => router.push("/conceptcoachingsyllbus")}
-        >
-          {" "}
-          yes{" "}
-        </button>
-        <button
-          className="bg-amber-700  flex gap-2.5 text-amber-300 p-10 rounded-[50%] cursor-pointer hover:bg-sky-700 "
-          type="button"
-          onClick={() => router.push("/conceptcoachingcontent")}
-        >
-          {" "}
-          TODO{" "}
-        </button>
-        <button
-          className="bg-black text-amber-50 p-10 cursor-pointer hover:bg-amber-300 rounded-[30%]  "
-          type="button"
-          onClick={() => router.push("/conceptcoachingonlineplatformlink")}
-        >
-          {" "}
-          OK{" "}
-        </button>
-        <button
-          className="bg-amber-700  flex gap-2.5 text-amber-300 p-10 rounded-[50%] cursor-pointer hover:bg-sky-700 "
-          type="button"
-          onClick={() => router.push("/TODOAPP")}
-        >
-          {" "}
-          click{""}
-        </button>
-        <button
-          className="bg-amber-950 bg-rose-600 text-yellow-400 p-10 rounded-[20%] hover:bg-slate-950 "
-          type="button"
-          onClick={() => router.push("/conceptcoachingteam")}
-        >
-          {" "}
-          Enroll{" "}
-        </button>
-        <button
-          className="bg-fuchsia-600 border-indigo-800 text-shadow-lime-300 p-10 rounded-[30%] hover:bg-emerald-500 "
-          type="button"
-          onClick={() => router.push("/practice")}
-        >
-          {" "}
-          practice{" "}
-        </button>
+        <div className="flex flex-wrap gap-6 justify-center items-center p-8">
+          <button
+            className="bg-amber-700 text-amber-300 w-40 h-40 flex justify-center items-center rounded-full border-4 border-amber-300 cursor-pointer hover:bg-sky-700 hover:border-sky-500 transition duration-300 ease-in-out"
+            type="button"
+            onClick={() => router.push("/conceptcoachingsyllbus")}
+          >
+            Yes
+          </button>
+
+          <button
+            className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white w-40 h-40 flex justify-center items-center rounded-full border-4 border-purple-300 cursor-pointer hover:bg-sky-700 hover:border-sky-500 transition duration-300 ease-in-out"
+            type="button"
+            onClick={() => router.push("/conceptcoachingcontent")}
+          >
+            TODO
+          </button>
+
+          <button
+            className="bg-gray-800 text-white w-40 h-40 flex justify-center items-center rounded-full border-4 border-gray-500 shadow-md relative overflow-hidden transition duration-300 ease-in-out hover:shadow-lg hover:bg-gray-700 hover:border-gray-300"
+            type="button"
+            onClick={() => router.push("/conceptcoachingonlineplatformlink")}
+          >
+            <span className="absolute inset-0 bg-gray-500 opacity-30 rounded-full hover:bg-amber-800 cursor-pointer blur-lg"></span>
+            <span className="relative z-10">OK</span>
+          </button>
+
+          <button
+            className="bg-amber-700 text-amber-300 w-40 h-40 flex justify-center items-center rounded-full border-4 border-amber-300 cursor-pointer hover:bg-sky-700 hover:border-sky-500 transition duration-300 ease-in-out"
+            type="button"
+            onClick={() => router.push("/TODOAPP")}
+          >
+            Click
+          </button>
+
+          <button
+            className="bg-rose-600 text-yellow-400 w-40 h-40 flex justify-center items-center rounded-full border-4 border-rose-700 cursor-pointer hover:bg-slate-900 hover:border-yellow-600 transition duration-300 ease-in-out"
+            type="button"
+            onClick={() => router.push("/conceptcoachingteam")}
+          >
+            Enroll
+          </button>
+
+          <button
+            className="bg-fuchsia-600 text-white w-40 h-40 flex justify-center items-center  rounded-full border-4 border-indigo-800 cursor-pointer hover:bg-emerald-500 hover:border-emerald-700 transition duration-300 ease-in-out"
+            type="button"
+            onClick={() => router.push("/practice")}
+          >
+            Practice
+          </button>
+        </div>
       </div>
     </div>
   );
