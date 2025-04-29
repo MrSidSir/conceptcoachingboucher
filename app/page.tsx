@@ -1,7 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import irshad from "../public/PHOTO IRSHAD.jpg";
 import Button from "@/components/button1";
 import Header from "@/components/Header";
 
@@ -40,15 +39,15 @@ export default function Home() {
         </button>
       </div>
 
-      <div className="bg-gradient-to-r from-gray-100 to-gray-300 p-10 rounded-lg shadow-lg mx-20">
-        <ul className="list-disc list-inside text-lg space-y-4">
-          <li className="bg-gray-900 text-white font-medium py-3 px-6 rounded-md shadow-md hover:shadow-lg transition duration-300">
+      <div className="bg-gray-100 p-3 rounded-lg shadow-sm mx-2">
+        <ul className="list-disc list-inside text-sm font-sans space-y-1">
+          <li className="bg-gray-600 text-white font-normal py-1 px-2 rounded-md hover:shadow-md transition-transform duration-200 hover:scale-102">
             Mr. Sam (M.Tech.)
           </li>
-          <li className="bg-red-500 text-white font-medium py-3 px-6 rounded-md shadow-md hover:shadow-lg transition duration-300">
+          <li className="bg-red-200 text-gray-800 font-normal py-1 px-2 rounded-md hover:shadow-md transition-transform duration-200 hover:scale-102">
             Mr. Tanveer Sir (Master of Code)
           </li>
-          <li className="bg-blue-600 text-white font-medium py-3 px-6 rounded-md shadow-md hover:shadow-lg transition duration-300">
+          <li className="bg-blue-300 text-gray-900 font-normal py-1 px-2 rounded-md hover:shadow-md transition-transform duration-200 hover:scale-102">
             Mr. Sid Sir (M.Sc.)
           </li>
         </ul>
@@ -103,11 +102,15 @@ export default function Home() {
       </div>
 
       <div className="flex justify-around items-center my-12">
-        <button className="bg-purple-600 text-white font-medium py-2 px-6 rounded-lg shadow-md hover:shadow-lg transform transition duration-300 hover:scale-110">
-          <search>Concept Coaching Syllabus</search>
+        <button
+          className="bg-purple-600 text-white font-medium py-2 px-6 rounded-lg shadow-md hover:shadow-lg transform transition duration-300 hover:scale-110"
+          type="button"
+          onClick={() => router.push("/thankyou")}
+        >
+          Concept Coaching Syllabus
         </button>
         <button className="bg-blue-500 text-white font-medium py-2 px-6 rounded-lg shadow-md hover:shadow-lg transform transition duration-300 hover:scale-110">
-          <search>OK</search>
+          OK
         </button>
       </div>
 
