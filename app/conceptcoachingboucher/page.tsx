@@ -5,6 +5,7 @@ import Image from "next/image";
 import HomePageButton from "@/components/homePageButton";
 import Header from "@/components/Header";
 
+
 const Brochure = () => {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800">

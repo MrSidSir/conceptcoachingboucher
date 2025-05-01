@@ -6,6 +6,7 @@ type Props = {};
 const Page = (props: Props) => {
   return (
     <div className="bg-gray-100 min-h-screen font-sans">
+      <Header />
       <header className="bg-blue-500 text-white py-6">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-3xl font-bold">Concept Coaching</h1>

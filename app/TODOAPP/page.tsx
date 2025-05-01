@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Button from "../../components/button1";
+import Header from "@/components/Header";
 const courses = [
   "Mathematics",
   "Physics",
@@ -8,6 +9,7 @@ const courses = [
   "Biology",
   "English",
   "Computer Science",
+  "commerce",
 ];
 
 async function Page() {
@@ -20,6 +22,7 @@ async function Page() {
 
   return (
     <div className="container">
+      <Header />
       <header className="fade-in">
         <h1>Concept Coaching Classes</h1>
         <input

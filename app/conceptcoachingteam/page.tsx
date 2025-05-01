@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "@/components/Header";
 
 const Page = () => {
   function sum(x: number, y: number, z: number) {
@@ -8,6 +9,50 @@ const Page = () => {
 
   return (
     <div className="bg-gray-100 min-h-screen">
+      <header className="bg-cyan-300 text-white shadow-lg">
+        <div className="container mx-auto flex items-center justify-between p-4">
+          {/* Logo */}
+          <div className="flex items-center space-x-2">
+            <img src="path-to-your-logo" alt="Logo" className="h-8 w-8" />
+            <span className="text-xl font-bold">MyApp</span>
+          </div>
+
+          {/* Navigation Links */}
+          <nav className="flex space-x-4 justify-between">
+            <a
+              href="#home"
+              className="hover:text-yellow-400 transition duration-300"
+            >
+              Home
+            </a>
+            <a
+              href="#courses"
+              className="hover:text-amber-700 transition duration-300"
+            >
+              Courses
+            </a>
+            <a
+              href="#search"
+              className="hover:text-emerald-900 transition duration-300 "
+            >
+              Search
+            </a>
+            <a
+              href="#menu"
+              className="hover:text-yellow-400 transition duration-300"
+            >
+              Menu
+            </a>
+          </nav>
+
+          {/* Add Action Button */}
+          <div>
+            <button className="bg-yellow-400 text-gray-900 px-4 py-2 rounded-lg hover:cursor-pointer font-medium hover:bg-yellow-500 transition duration-300">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </header>
       {/* Header */}
       <header className="bg-slate-800 text-white py-6 text-center">
         <h1 className="text-4xl font-bold">Concept Coaching Classes</h1>

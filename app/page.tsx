@@ -3,12 +3,14 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Button from "@/components/button1";
 import Header from "@/components/Header";
+import Address from "@/components/irshad/Address";
 
 export default function Home() {
   const router = useRouter();
   return (
-    <div>
+    <div className="w-[80%] mx-auto">
       <Header />
+
       <div className="flex justify-center items-center flex-col m-12">
         <h1 className="bg-gradient-to-r from-blue-600 via-purple-500 to-pink-400 text-white font-extrabold text-4xl md:text-5xl p-4 rounded-lg shadow-lg">
           Welcome to Concept Coaching Browser
@@ -119,6 +121,9 @@ export default function Home() {
           About Our Facilities
         </h3>
         <Button />
+        <div>
+          <Address />
+        </div>
       </div>
     </div>
   );
