@@ -1,12 +1,59 @@
 "useClient";
 import React from "react";
+import Header from "@/components/Header";
 
 type Props = {};
 
 const Page = (props: Props) => {
   return (
     <div className="bg-gray-100 min-h-screen font-sans">
-      <Header />
+      <header className="bg-cyan-900 text-white shadow-lg">
+        <div className="container mx-auto flex items-center justify-between p-4">
+          {/* Logo */}
+          <div className="flex items-center space-x-2">
+            <img src="path-to-your-logo" alt="Logo" className="h-8 w-8" />
+            <span className="text-xl font-bold">MyApp</span>
+          </div>
+
+          {/* Navigation Links */}
+          <nav className="flex space-x-4">
+            <a
+              href="#home"
+              className="hover:text-blue-500 transition duration-300 flex-1/2 "
+            >
+              <button className="bg-cyan-400 hover:text-2xl rounded-lg text-black">
+                {" "}
+                Home{" "}
+              </button>
+            </a>
+            <a
+              href="#courses"
+              className="hover:text-yellow-400 transition duration-300"
+            >
+              Courses
+            </a>
+            <a
+              href="#search"
+              className="hover:text-blue-500 transition duration-300"
+            >
+              Search
+            </a>
+            <a
+              href="#menu"
+              className="hover:text-emerald-500 transition duration-300"
+            >
+              Menu
+            </a>
+          </nav>
+
+          {/* Add Action Button */}
+          <div>
+            <button className="bg-amber-300 text-gray-900 px-4 py-2 rounded-lg font-medium hover:bg-yellow-500 transition duration-300">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </header>
       <header className="bg-blue-500 text-white py-6">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-3xl font-bold">Concept Coaching</h1>
