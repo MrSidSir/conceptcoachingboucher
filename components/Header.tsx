@@ -9,7 +9,7 @@ const Header = (props: Props) => {
       className="bg-gray-800 p[50%] 
      text-white shadow-lg"
     >
-      <div className="container mx-auto max-h-full flex items-center justify-between p-4">
+      <div className="container mx-auto max-h-full flex items-center justify-between  px-30 py-4">
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <img src="path-to-your-logo" alt="Logo" className="h-8 w-8" />

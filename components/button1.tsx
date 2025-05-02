@@ -1,3 +1,4 @@
+"use Client";
 import Link from "next/link";
 import React from "react";
 
@@ -59,6 +60,14 @@ const Button = (props: Props) => {
             onClick={() => router.push("/conceptcoachingteam")}
           >
             Enroll
+          </button>
+          <button
+            className="bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold text-lg px-6 py-3 rounded-full shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:from-purple-600 hover:to-blue-500
+          "
+            type="button"
+            onClick={() => router.push("/thankyou")}
+          >
+            THANK YOU 🎉
           </button>
 
           <button

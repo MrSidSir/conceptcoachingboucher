@@ -5,8 +5,8 @@ type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <footer className="bg-slate-900 text-amber-50 py-6 p-2">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+    <footer className="bg-slate-900 text-amber-50 py-6 p-1  px-30 py-10">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-center px30% py-4 md:text-left">
         {/* Brand Name or Tagline */}
         <div className="mb-4 md:mb-0">
           <h2 className="text-2xl font-bold tracking-wide text-amber-400">

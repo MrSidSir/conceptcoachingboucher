@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 export default function Home() {
   const router = useRouter();
   return (
-    <div className="w-[80%] mx-auto">
+    <div className="">
       <Header />
 
       <div className="flex justify-center items-center flex-col m-12">
@@ -117,7 +117,7 @@ export default function Home() {
         </button>
       </div>
 
-      <div className="m-12">
+      <div className="">
         <h3 className="text-xl text-center font-bold text-violet-500 mb-4">
           About Our Facilities
         </h3>

@@ -3,11 +3,9 @@ import Header from "@/components/Header";
 import HomePageButton from "@/components/homePageButton";
 import { useState } from "react";
 
-const TodoApp = () => {
+const Page = () => {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState("");
-  console.log("taske", tasks);
-  console.log("taske", newTask);
 
   const addTask = () => {
     if (newTask.trim() !== "") {
@@ -15,8 +13,6 @@ const TodoApp = () => {
       setNewTask("");
     }
   };
-
-  // https://jsonplaceholder.typicode.com/posts/1/comments
 
   const toggleTaskCompletion = (index) => {
     setTasks(
@@ -31,9 +27,14 @@ const TodoApp = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex justify-center items-center">
-      <Header />
-      <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+    <div className="min-h-screen bg-gray-100 flex flex-col justify-between items-center">
+      {/* Header at the Top */}
+      <div className="w-full">
+        <Header />
+      </div>
+
+      {/* Main To-Do List Section */}
+      <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md flex-grow">
         <h1 className="text-3xl font-bold text-center text-blue-600">
           Concept Coaching Classes - To-Do List
         </h1>
@@ -64,9 +65,7 @@ const TodoApp = () => {
             <li
               key={index}
               className={`flex justify-between items-center p-3 border rounded ${
-                task.completed
-                  ? "line-through text-gray-500"
-                  : "line-through text-red-700"
+                task.completed ? "line-through text-gray-500" : "text-red-700"
               }`}
             >
               <span onClick={() => toggleTaskCompletion(index)}>
@@ -82,11 +81,13 @@ const TodoApp = () => {
           ))}
         </ul>
       </div>
-      <div>
+
+      {/* Button at the Bottom */}
+      <div className="w-full text-center mb-4">
         <HomePageButton />
       </div>
     </div>
   );
 };
 
-export default TodoApp;
+export default Page;
