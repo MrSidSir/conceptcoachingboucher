@@ -4,6 +4,7 @@ import Image from "next/image";
 import Button from "@/components/button1";
 import Header from "@/components/Header";
 import Address from "@/components/irshad/Address";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const router = useRouter();
@@ -123,6 +124,7 @@ export default function Home() {
         <Button />
         <div>
           <Address />
+          <Footer />
         </div>
       </div>
     </div>

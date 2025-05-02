@@ -5,7 +5,6 @@ import Image from "next/image";
 import HomePageButton from "@/components/homePageButton";
 import Header from "@/components/Header";
 
-
 const Brochure = () => {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800">
@@ -42,10 +41,7 @@ const Brochure = () => {
           <input className="shadow appearance-none border  rounded w-full py-2 px-3text-gray"></input>
         </div>
         <div className="mb-6">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            for="password"
-          >
+          <label className="block text-gray-700 text-sm font-bold mb-2">
             password
           </label>
           <input className="class=shadow appearance-none border border-red-50 rounded w-full py-2"></input>
@@ -69,6 +65,8 @@ const Brochure = () => {
           <p>&copy; 2025 Concept Coachinng Classes . thank you.</p>
         </div>
       </footer>
+      
+      <Footer />
     </div>
   );
 };

@@ -7,7 +7,7 @@ type Props = {};
 const Page = (props: Props) => {
   return (
     <div>
-      <header className="bg-gray-400 text-white shadow-lg">
+      <header className="bg-gray-400 h-full  text-white shadow-lg">
         <div className="container mx-auto flex items-center justify-between p-4">
           {/* Logo */}
           <div className="flex items-center space-x-2">
