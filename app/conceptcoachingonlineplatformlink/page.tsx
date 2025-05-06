@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import Header from "@/components/Header";
+import Header from "@/components/Header"; // Ensure this path is correct
 
 function CoachingInstitute() {
   return (
     <div className="coaching-container bg-gray-50 p-6 rounded-lg shadow-md">
       <Header />
+
       {/* Header Section */}
       <header className="text-center mb-6">
         <h1 className="text-4xl font-bold text-blue-600 mb-4">
@@ -30,7 +31,7 @@ function CoachingInstitute() {
         />
         <Image
           className="rounded-md shadow-lg"
-          src="https://images.unsplash.com/photo-1608848461950-0fe51dfc41cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80"
+          src="https://images.unsplash.com/photo-1608848461950-0fe51dfc41cb"
           width={250}
           height={350}
           alt="Learning Environment"
