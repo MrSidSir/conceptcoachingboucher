@@ -69,7 +69,7 @@ const Page = () => {
           Join our coaching programs and excel in academics and competitive
           exams.
         </p>
-        <button className="mt-6 bg-blue-600 text-white py-2 px-6 rounded-lg  hover:bg-amber-600 hover:bg-cyan-400">
+        <button className="mt-6 bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-amber-600 hover:bg-cyan-400">
           Enroll Now
         </button>
       </section>

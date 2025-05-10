@@ -5,7 +5,7 @@ import Button from "@/components/button1";
 import Header from "@/components/Header";
 import Address from "@/components/irshad/Address";
 import Footer from "../components/Footer";
-import hero from "@/components/hero";
+import Erolld from "@/components/Enrolld";
 
 export default function Home() {
   const router = useRouter();
@@ -116,8 +116,9 @@ export default function Home() {
           Concept Coaching Syllabus
         </button>
         <button className="bg-blue-500 text-white font-medium py-2 px-6 rounded-lg shadow-md hover:shadow-lg transform transition duration-300 hover:scale-110">
-          OK
+          Enrolld NOw
         </button>
+        <Erolld />
       </div>
 
       <div className="">
