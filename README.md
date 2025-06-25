@@ -34,3 +34,21 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Backend API (Enroll Details)
+
+A Node.js + Express + MongoDB backend is included in the `backend/` folder for handling enroll details.
+
+### Setup
+1. `cd backend`
+2. Run `npm install`
+3. Create a `.env` file with your MongoDB URI:
+   ```
+   MONGODB_URI=your_mongodb_connection_string
+   PORT=5000
+   ```
+4. Start the server: `npm start`
+
+### Endpoints
+- `POST /api/enroll` — Add a new enrollment
+- `GET /api/enroll` — Get all enrollments
