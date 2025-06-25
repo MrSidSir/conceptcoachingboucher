@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 type Props = {};
 
 const Hero = (props: Props) => {
-  const router = useRouter()
+  const router = useRouter();
   return (
     <div>
       <div className="flex justify-center items-center flex-col m-12">
@@ -35,6 +35,7 @@ const Hero = (props: Props) => {
             height={200}
             alt="Picture of the author"
             className="rounded-full"
+            style={{ height: "auto" }}
           />
         </button>
       </div>
